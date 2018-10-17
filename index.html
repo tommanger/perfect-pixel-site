@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="screen"></div>
+    <section class="header-page">
+        <div class="container flex align-center space-between header-height">
+            <div class="logo logo-nav">Blogin<span>.</span></div>
+
+            <ul class="main-nav" id="main-nav">
+                <li class="link-nav btn-open">
+                    <a class="a-link" href="#">Journal</a>
+                    <ul class="dropdown-nav">
+                        <li class="link-drop">
+                            <a href="#"> October 2016</a>
+                        </li>
+                        <li class="link-drop">
+                            <a href="#"> January 2017</a>
+                        </li>
+                        <li class="link-drop">
+                            <a href="#"> April 2017</a>
+                        </li>
+                        <li class="link-drop">
+                            <a href="#"> July 2017 </a>
+                        </li>
+                    </ul>
+                </li>
+                <li  class="link-nav">
+                    <a class="a-link" href="#">About</a>
+                </li>
+                <li class="link-nav">
+                    <a class="a-link" href="#">Work</a>
+                </li>
+                <li class="link-nav">
+                    <a class="a-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <button onclick="toggleMenu()" class="menu-icon hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+
+
+
+        </div>
+    </section>
+    <main class="container main-page">
+        <ul class="posts-container flex column">
+            <li class="post-item flex">
+                <img class="post-image" src="img/1.png" alt="">
+                <div class="post-text column flex space-between flex-start">
+                    <h2 class="post-heading">Duis aute irure dolor in henderit in voluptate.</h2>
+                    <div class="post-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</div>
+                    <button onclick="toggleModal()" class="post-btn-read">Continue Reading<span class="arrow">→</span></button>
+                </div>
+            </li>
+            <li class="post-item flex">
+                <img class="post-image" src="img/2.png" alt="">
+                <div class="column flex space-between flex-start">
+                    <h2 class="post-heading">Duis aute irure dolor in henderit in voluptate.</h2>
+                    <div class="post-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</div>
+                    <button onclick="toggleModal()" class="post-btn-read">Continue Reading<span class="arrow">→</span></button>
+                </div>
+            </li>
+            <li class="post-item flex">
+                <img class="post-image" src="img/3.png" alt="">
+                <div class="column flex space-between flex-start">
+                    <h2 class="post-heading">Duis aute irure dolor in henderit in voluptate.</h2>
+                    <div class="post-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</div>
+                    <button onclick="toggleModal()" class="post-btn-read">Continue Reading<span class="arrow">→</span></button>
+                </div>
+            </li>
+
+        </ul>
+        <div class="container-btn-page flex space-between flex-start">
+            <button class="btn-page">← Previous</button>
+            <button class="btn-page">Next →</button>
+
+        </div>
+    </main>
+    <footer class="footer-page flex column jusify-center align-center">
+        <a class="logo footer-logo margin-bottom40" href="#top">Blogin<span>.</span></a>
+        <div class="footer-rights margin-bottom40">© 2014 Blogin.com - All Rights Reserved - Find more free Templates
+            at Pixelhint.com</div>
+        <div class="container-btns-footer">
+            <button class="btn-footer"><i class="fab fa-facebook-f"></i></button>
+            <button class="btn-footer"><i class="fab fa-twitter"></i></button>
+            <button class="btn-footer"><i class="fab fa-behance"></i></button>
+            <button class="btn-footer"><i class="fab fa-dribbble"></i></button>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <h2>vdvdfvdf</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid nam, id culpa hic nisi repellendus minus,
+            totam nemo, rem reiciendis quidem exercitationem! Quis ducimus fugit voluptas aliquid eligendi facilis
+            perspiciatis.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quod nam aut incidunt laboriosam optio sed,
+            amet impedit in temporibus nulla ab vitae facilis corrupti quos! Explicabo amet nostrum voluptatem?
+
+        </p>
+        <button class="btn-close-nodal" onclick="toggleModal()">CLOSE</button>
+    </div>
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
