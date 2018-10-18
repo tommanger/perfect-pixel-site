@@ -222,15 +222,18 @@ img{
     padding: 40px;
 }
 
-.btn-close-nodal{
+.btn-close-modal{
     border: 0;
     background-color: #818181;
     color: white;
     font-size: 20px;
     width: 120px;
     height: 50px;
-    
 
+}
+.btn-close-modal:hover{
+    background-color: #949494;
+    cursor: pointer;
 }
 body.openModal .modal{
     opacity: 1;
@@ -431,7 +434,10 @@ body.open .close-btn{
     color: #58c93a;
     box-shadow: inset 0px -6px 0px 0px #58c93a;
 }
+.btn-open:focus .link-drop{
+    height: 50px;
 
+}
 
 .main-nav {
     position: fixed;
